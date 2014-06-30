@@ -1,0 +1,11 @@
+option java_package = "zh.lisa";
+option java_outer_classname = "RemoteCallResultProto";
+
+message RemoteCallResult { 
+  required bool isSuccess = 1;
+  optional bytes resultObj = 2; 
+  optional string resultType = 3;
+  optional string errorMsg = 4;
+  optional int32 resultListSize = 5;
+  repeated int32 resultListObjLength = 6;
+}

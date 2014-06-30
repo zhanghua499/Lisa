@@ -1,0 +1,11 @@
+option java_package = "zh.lisa";
+option java_outer_classname = "RemoteCallProtocolProto";
+
+message RemoteCallProtocol { 
+  required string serviceName = 1;
+  required string methodName = 2;
+  optional bytes paramByte = 3; 
+  repeated string paramType = 4;
+  repeated int32 paramByteLength = 5;
+  
+}

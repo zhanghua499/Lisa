@@ -1,0 +1,9 @@
+option java_package = "zh.lisa.netty.test";
+option java_outer_classname = "AddressProto";
+
+message Address { 
+  required string name = 1; 
+  required int32 zip = 2; 
+}
+
+protoc.exe --java_out=./ Address.proto
